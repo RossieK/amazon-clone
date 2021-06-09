@@ -3,6 +3,7 @@ import {Switch, Route} from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
+import Payment from "./components/Payment";
 import Login from "./components/Login";
 import {useEffect} from "react";
 import firebase from "./firebase";
@@ -37,6 +38,10 @@ function App() {
         <Route path="/checkout" exact>
           <Header />
           <Checkout />
+        </Route>
+        <Route path="/payment" exact>
+          <Header />
+          <Payment />
         </Route>
         <Route path="/login" exact>
           <Login />
